@@ -13,6 +13,7 @@
 		0023A632269AA327002C426A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0023A630269AA327002C426A /* Main.storyboard */; };
 		0023A634269AA329002C426A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0023A633269AA329002C426A /* Assets.xcassets */; };
 		0023A637269AA329002C426A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0023A635269AA329002C426A /* LaunchScreen.storyboard */; };
+		0037F66626A033FD00E9F2BD /* FirebaseAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0037F66526A033FD00E9F2BD /* FirebaseAuthentication.swift */; };
 		00418E9A269D82B400381EDA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00418E99269D82B400381EDA /* LoginViewController.swift */; };
 		00418E9C269D82C100381EDA /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00418E9B269D82C100381EDA /* ChatViewController.swift */; };
 		00418EA4269D842200381EDA /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00418EA2269D842200381EDA /* ChatTableViewCell.swift */; };
@@ -31,6 +32,7 @@
 		0023A633269AA329002C426A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0023A636269AA329002C426A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0023A638269AA329002C426A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0037F66526A033FD00E9F2BD /* FirebaseAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthentication.swift; sourceTree = "<group>"; };
 		00418E99269D82B400381EDA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = "Chat App/LoginViewController.swift"; sourceTree = SOURCE_ROOT; };
 		00418E9B269D82C100381EDA /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		00418EA2269D842200381EDA /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 		0023A629269AA327002C426A /* Chat App */ = {
 			isa = PBXGroup;
 			children = (
+				0037F66426A033C800E9F2BD /* ReusableFunctions */,
 				00418EA6269D865A00381EDA /* ViewModifiers */,
 				00418EA1269D83EA00381EDA /* ExtensionsAndConstants */,
 				00418EA0269D83C300381EDA /* CustomViewswithControllers */,
@@ -87,6 +90,14 @@
 				00E35E7E269AC96400D34E69 /* GoogleService-Info.plist */,
 			);
 			path = "Chat App";
+			sourceTree = "<group>";
+		};
+		0037F66426A033C800E9F2BD /* ReusableFunctions */ = {
+			isa = PBXGroup;
+			children = (
+				0037F66526A033FD00E9F2BD /* FirebaseAuthentication.swift */,
+			);
+			path = ReusableFunctions;
 			sourceTree = "<group>";
 		};
 		00418E9D269D836300381EDA /* Views */ = {
@@ -281,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0037F66626A033FD00E9F2BD /* FirebaseAuthentication.swift in Sources */,
 				00418E9C269D82C100381EDA /* ChatViewController.swift in Sources */,
 				0023A62F269AA327002C426A /* ViewController.swift in Sources */,
 				0023A62B269AA327002C426A /* AppDelegate.swift in Sources */,

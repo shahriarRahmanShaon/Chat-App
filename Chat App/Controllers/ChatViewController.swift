@@ -32,7 +32,7 @@ extension ChatViewController: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reUseCell", for: indexPath) as! ChatTableViewCell
-        cell.cellText.text = "hola tress commas
+        cell.cellText.text = "hola tress commas"
         
         return cell
     }

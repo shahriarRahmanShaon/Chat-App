@@ -82,13 +82,13 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="aXF-nE-8ot">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="150"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FWo-tZ-vQs">
+                                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="shaon463@gmail.com" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FWo-tZ-vQs">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="67.5"/>
                                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ow8-xE-qr1">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ow8-xE-qr1">
                                                 <rect key="frame" x="0.0" y="82.5" width="374" height="67.5"/>
                                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
@@ -134,6 +134,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="PGf-BB-yff"/>
                     <connections>
+                        <outlet property="emailField" destination="FWo-tZ-vQs" id="eIe-dH-81o"/>
+                        <outlet property="passwordField" destination="Ow8-xE-qr1" id="3y7-e1-Dtf"/>
                         <segue destination="pSw-4i-fN8" kind="show" identifier="loginToChat" id="pya-gk-aou"/>
                     </connections>
                 </viewController>
@@ -182,6 +184,9 @@
                                         <state key="normal" title="Register">
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="registerButtonPressed:" destination="agg-9A-TN6" eventType="touchUpInside" id="KSY-be-fiL"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
